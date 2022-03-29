@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Show color code</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://helios.utcluj.ro/cosmin/WEB/CSS/style.css">
+<style>
+
+{
+
+    margin:0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: righteous;
+
+}
+
+
+.contentBox {
+
+    width: 100%;
+
+    height: 70vh;
+
+    display: flex;
+
+    justify-content: space-evenly;
+
+    align-items: center;
+
+}
+
+//making 10 colored boxes off type div
+.contentBox .box1{
+	
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #d9ed92;
+}
+
+.contentBox .box2{
+	
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #b5e48c;
+}
+
+.contentBox .box3{
+	
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #99d98c;
+
+}
+
+.contentBox .box4{
+	
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #76c893;
+}
+
+.contentBox .box5{
+	
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #52b69a;
+}
+
+.contentBox .box6{
+	
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #34a0a4;
+}
+
+.contentBox .box7{
+	
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #168aad;
+}
+
+.contentBox .box8{
+	
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #1a759f;
+}
+
+.contentBox .box9{
+	
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #1e6091;
+}
+
+.contentBox. box10{
+	
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #184e77;
+}
+
+.contentBox .code{  //the place where we display the code of color
+
+    width:100%;
+    top: 8px;
+    position: absolute;
+    text-align: center;
+    margin-top: 2;
+
+}
+
+
+
+</style>
+</head>
+
+<script>
+function codeColor(obj)
+{
+	myDivObj = document.getElementById(obj)
+	let myDivObjColor = window.getComputedStyle(obj).backgroundColor;
+	document.getElementById("disp").style.color=myDivObjColor;
+	disp.innerHTML = "Code of this color is: "+myDivObjColor
+
+}
+
+
+</script>
+
+<body>
+
+<div id="1" class="contentBox">
+<div class="box1" onmouseover="codeColor(this)">
+</div>
+<div id="1" class="box2" onmouseover="codeColor(this)">
+</div>
+<div id="1" class="box3" onmouseover="codeColor(this)">
+</div>
+<div id="1" class="box4" onmouseover="codeColor(this)">
+</div>
+<div id="1" class="box5" onmouseover="codeColor(this)">
+</div>
+<div id="1" class="box6" onmouseover="codeColor(this)">
+</div>
+<div id="1" class="box7" onmouseover="codeColor(this)">
+</div>
+<div id="1" class="box8" onmouseover="codeColor(this)">
+</div>
+<div id="1" class="box9" onmouseover="codeColor(this)">
+</div>
+<div id="1" class="box10" onmouseover="codeColor(this)">
+</div>
+
+
+<div id="disp" class="code">
+
+</body>
+</html>
